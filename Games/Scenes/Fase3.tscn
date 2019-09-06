@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/moeda.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Lava.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Flags/Flag3.tscn" type="PackedScene" id=5]
+
+[node name="Fase3" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+tile_data = PoolIntArray( -458679, 20, 0, -393144, 20, 0, -393143, 29, 0, -393142, 20, 0, -327609, 20, 0, -327608, 29, 0, -327607, 29, 0, -327606, 29, 0, -327605, 20, 0, -262104, 37, 0, -262103, 35, 0, -262074, 19, 0, -262073, 29, 0, -262072, 29, 0, -262071, 29, 0, -262070, 29, 0, -262069, 29, 0, -262068, 18, 0, -196569, 37, 0, -196568, 34, 0, -196567, 27, 0, -196566, 35, 0, -196541, 26, 0, -131034, 37, 0, -131033, 34, 0, -131032, 7, 0, -131031, 24, 0, -131030, 27, 0, -131029, 35, 0, -131009, 26, 0, -65510, 2, 0, -65509, 0, 0, -65499, 37, 0, -65498, 34, 0, -65497, 7, 0, -65496, 7, 0, -65495, 24, 0, -65494, 24, 0, -65493, 27, 0, -65492, 35, 0, -65481, 26, 0, 16, 38, 0, 19, 38, 0, 21, 37, 0, 22, 30, 0, 23, 30, 0, 30, 13, 0, 34, 25, 0, 65551, 37, 0, 65556, 30, 0, 65557, 34, 0, 65558, 7, 0, 65559, 7, 0, 65563, 17, 0, 65566, 25, 0, 65584, 13, 0, 65588, 26, 0, 65593, 13, 0, 65597, 26, 0, 131086, 37, 0, 131087, 34, 0, 131092, 7, 0, 131093, 7, 0, 131094, 7, 0, 131095, 7, 0, 131119, 19, 0, 131120, 20, 0, 131121, 18, 0, 131129, 26, 0, 131130, 12, 0, 196609, 13, 0, 196613, 38, 0, 196614, 38, 0, 196615, 38, 0, 196616, 38, 0, 196619, 13, 0, 196621, 37, 0, 196622, 34, 0, 196623, 7, 0, 196625, 21, 0, 196630, 7, 0, 196631, 7, 0, 327679, 30, 0, 262144, 30, 0, 262145, 30, 0, 262146, 30, 0, 262147, 30, 0, 262148, 30, 0, 262153, 30, 0, 262154, 30, 0, 262155, 30, 0, 262156, 30, 0, 262157, 34, 0, 262158, 7, 0, 262159, 7, 0, 262166, 7, 0, 262167, 7, 0, 393215, 7, 0, 327680, 7, 0, 327681, 7, 0, 327682, 7, 0, 327683, 7, 0, 327684, 7, 0, 327689, 7, 0, 327690, 7, 0, 327691, 7, 0, 327692, 7, 0, 327693, 7, 0, 327694, 7, 0, 327695, 7, 0, 327699, 21, 0, 327700, 7, 0, 327701, 7, 0, 327702, 7, 0, 327703, 7, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="Moedas" type="Node2D" parent="."]
+
+[node name="moeda" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 1415, 310 )
+
+[node name="moeda2" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 1486, 310 )
+
+[node name="moeda3" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 1415, 243 )
+
+[node name="moeda4" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 1486, 243 )
+
+[node name="moeda5" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 2381.28, -35.5108 )
+
+[node name="moeda6" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 3343, 30 )
+
+[node name="moeda7" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 3624, 30 )
+
+[node name="moeda8" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 4244, 30 )
+
+[node name="moeda9" parent="Moedas" instance=ExtResource( 3 )]
+position = Vector2( 4659, -245 )
+
+[node name="Lava" parent="." instance=ExtResource( 4 )]
+position = Vector2( -136.672, 422.854 )
+
+[node name="Flag3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5072.62, -521.61 )
